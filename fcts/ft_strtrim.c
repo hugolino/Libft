@@ -36,14 +36,25 @@ char	*ft_strtrim(char const *s)
   int i;
   int j;
   int lenk;
+  int k;
+  char *str;
 
   i = 0;
   len = ft_strlen(s);
   j = len;
+  k = 0;
   while (s[i] == ' ' || s[i] == '\n' || s[i] == '\t')
     i++;
   while (s[j] == ' ' || s[j] == '\n' || s[j] == '\t')
     j--;
   lenk = len - j - i;
-  return (ft_strsub(s, i, lenk));
+  i = i + 1;
+  str = (char*)malloc(sizeof(char) * (lenk + 1));
+  while (i < j)
+    {
+      str[k] = s[i];
+      i++;
+      k++;
+    }
+  return (str);
 }
