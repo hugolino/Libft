@@ -1,60 +1,40 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: hdecaux <hdecaux@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2015/10/16 11:18:38 by hdecaux           #+#    #+#             */
+/*   Updated: 2015/10/16 13:05:39 by hdecaux          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include <stdlib.h>
 #include "libft.h"
 
-char	*ft_strtrim(char const *s)
+char		*ft_strtrim(const char *s)
 {
-  /*  int i;
-  int j;
-  int len;
-  int len2;
-  char *str;
-  char *dst;
+	size_t	i;
+	size_t	len;
+	size_t	j;
+	char	*str;
 
-  i = 0;
-  j = 0;
-  len2 = ft_strlen(s);
-  str = (char*)malloc(sizeof(char) * (len2 +1));
-  while (s[i])
-    {
-      if (s[i] == ' ' || s[i] == '\n' || s[i] == '\t')
-	i++;
-      else
+	i = 0;
+	len = ft_strlen(s);
+	j = len;
+	while (s[i] && (s[i] == '\n' || s[i] == '\t' || s[i] == ' '))
 	{
-	  str[j] = s[i];
-	  i++;
-	  j++;
+		i++;
 	}
-    }
-  len = ft_strlen(str);
-  dst = (char*)malloc(sizeof(char) * (len + 1));
-  if (dst == NULL)
-    return (NULL);
-  ft_strcpy(dst, str);
-  return (dst);*/
-  int len;
-  int i;
-  int j;
-  int lenk;
-  int k;
-  char *str;
-
-  i = 0;
-  len = ft_strlen(s);
-  j = len;
-  k = 0;
-  while (s[i] == ' ' || s[i] == '\n' || s[i] == '\t')
-    i++;
-  while (s[j] == ' ' || s[j] == '\n' || s[j] == '\t')
-    j--;
-  lenk = len - j - i;
-  i = i + 1;
-  str = (char*)malloc(sizeof(char) * (lenk + 1));
-  while (i < j)
-    {
-      str[k] = s[i];
-      i++;
-      k++;
-    }
-  return (str);
+	while (j > 0 && (s[j] == '\0' || s[j] == '\n' || s[j] == '\t' ||
+	s[j] == ' '))
+	{
+		j--;
+	}
+	if (len < j - i)
+		return ("");
+	len = j - i;
+	str = ft_strsub(s, i, len + 1);
+	return (str);
 }
