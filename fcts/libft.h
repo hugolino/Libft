@@ -24,8 +24,14 @@ typedef	struct		s_list
 	struct s_list	*next;
 }					t_list;
 
-size_t                  ft_count_lines(char const *str, char c);
-size_t                  ft_count_char(char const *str, char c, int a);
+int				ft_isupper(int a);
+char				*ft_strlowcase(char *str);
+char				*ft_strupcase(char *str);
+int				ft_islower(int a);
+int				ft_isspace(int a);
+void				ft_puttabchar(const char **tab);
+size_t				ft_count_lines(char const *str, char c);
+size_t				ft_count_char(char const *str, char c, int a);
 void				*ft_memalloc(size_t size);
 void				ft_memdel(void **ap);
 char				*ft_strnew(size_t size);
