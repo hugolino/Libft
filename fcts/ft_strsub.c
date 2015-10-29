@@ -6,11 +6,10 @@
 /*   By: hdecaux <hdecaux@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/10/16 13:27:05 by hdecaux           #+#    #+#             */
-/*   Updated: 2015/10/16 13:32:45 by hdecaux          ###   ########.fr       */
+/*   Updated: 2015/10/28 11:40:59 by hdecaux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 char		*ft_strsub(char const *s, unsigned int start, size_t len)

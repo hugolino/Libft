@@ -6,11 +6,10 @@
 /*   By: hdecaux <hdecaux@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/10/14 13:49:10 by hdecaux           #+#    #+#             */
-/*   Updated: 2015/10/14 13:53:50 by hdecaux          ###   ########.fr       */
+/*   Updated: 2015/10/28 11:40:28 by hdecaux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 char		*ft_strnew(size_t size)

@@ -6,12 +6,11 @@
 /*   By: hdecaux <hdecaux@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 15:52:32 by hdecaux           #+#    #+#             */
-/*   Updated: 2015/10/09 12:04:40 by hdecaux          ###   ########.fr       */
+/*   Updated: 2015/10/28 11:37:14 by hdecaux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <unistd.h>
 
 void	ft_putendl(char const *s)
 {

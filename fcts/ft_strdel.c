@@ -6,11 +6,10 @@
 /*   By: hdecaux <hdecaux@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/10/14 13:54:16 by hdecaux           #+#    #+#             */
-/*   Updated: 2015/10/14 13:54:55 by hdecaux          ###   ########.fr       */
+/*   Updated: 2015/10/28 11:39:23 by hdecaux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 void	ft_strdel(char **as)

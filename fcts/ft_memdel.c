@@ -6,11 +6,10 @@
 /*   By: hdecaux <hdecaux@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/10/14 13:29:16 by hdecaux           #+#    #+#             */
-/*   Updated: 2015/10/14 13:32:05 by hdecaux          ###   ########.fr       */
+/*   Updated: 2015/10/28 11:35:57 by hdecaux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 void	ft_memdel(void **ap)

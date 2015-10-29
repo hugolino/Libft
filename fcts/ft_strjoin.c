@@ -6,11 +6,10 @@
 /*   By: hdecaux <hdecaux@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/10/16 13:33:10 by hdecaux           #+#    #+#             */
-/*   Updated: 2015/10/16 13:33:56 by hdecaux          ###   ########.fr       */
+/*   Updated: 2015/10/28 11:40:37 by hdecaux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 char		*ft_strjoin(char const *s1, char const *s2)

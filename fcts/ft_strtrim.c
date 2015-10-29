@@ -6,11 +6,10 @@
 /*   By: hdecaux <hdecaux@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/10/16 11:18:38 by hdecaux           #+#    #+#             */
-/*   Updated: 2015/10/16 13:05:39 by hdecaux          ###   ########.fr       */
+/*   Updated: 2015/10/28 11:41:08 by hdecaux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 char		*ft_strtrim(const char *s)
