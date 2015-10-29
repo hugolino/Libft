@@ -1,6 +1,19 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_lstadd.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: hdecaux <hdecaux@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2015/10/29 12:27:08 by hdecaux           #+#    #+#             */
+/*   Updated: 2015/10/29 12:31:31 by hdecaux          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
-void	ft_lstadd(char **alst, char *new)
+
+void		ft_lstadd(t_list **alst, t_list *new)
 {
-	(void)alst;
-	(void)new;
+	new->next = *alst;
+	*alst = new;
 }
