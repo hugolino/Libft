@@ -12,50 +12,7 @@
 
 #include "libft.h"
 
-size_t			ft_count_lines(char const *str, char c)
-{
-	size_t		b;
-	size_t		m;
-
-	b = 0;
-	m = 1;
-	while (str[b])
-	{
-		if (str[b] != c)
-			b++;
-		if (str[b] == c && str[b + 1] != c)
-		{
-			b++;
-			m++;
-		}
-		else if (str[b] == c && str[b + 1] == c)
-			b++;
-	}
-	return (m);
-}
-
-size_t			ft_count_char(char const *str, char c, int a)
-{
-	size_t		w;
-
-	w = 0;
-	while (str[a])
-	{
-		if (str[a] == c)
-		{
-			a++;
-			break ;
-		}
-		else if (str[a] != c)
-		{
-			w++;
-			a++;
-		}
-	}
-	return (w);
-}
-
-int				ft_tabcpy(char *tab, char const *s, size_t i, char c)
+int		      	ft_tabcpy(char *tab, char const *s, size_t i, char c)
 {
 	int k;
 
