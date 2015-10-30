@@ -6,7 +6,7 @@
 /*   By: hdecaux <hdecaux@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/10/16 13:43:13 by hdecaux           #+#    #+#             */
-/*   Updated: 2015/10/29 11:43:23 by hdecaux          ###   ########.fr       */
+/*   Updated: 2015/10/30 12:12:33 by hdecaux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,11 +24,11 @@ typedef	struct		s_list
 	struct s_list	*next;
 }					t_list;
 
-int				ft_isupper(int a);
+int					ft_isupper(int a);
 char				*ft_strlowcase(char *str);
 char				*ft_strupcase(char *str);
-int				ft_islower(int a);
-int				ft_isspace(int a);
+int					ft_islower(int a);
+int					ft_isspace(int a);
 void				ft_puttabchar(const char **tab);
 size_t				ft_count_lines(char const *str, char c);
 size_t				ft_count_char(char const *str, char c, int a);
