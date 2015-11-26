@@ -6,13 +6,13 @@
 /*   By: hdecaux <hdecaux@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/10/28 08:42:05 by hdecaux           #+#    #+#             */
-/*   Updated: 2015/10/28 10:56:54 by hdecaux          ###   ########.fr       */
+/*   Updated: 2015/11/26 13:13:18 by hdecaux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int			ft_count(int n)
+static int	ft_count(int n)
 {
 	int		d;
 	int		i;
@@ -27,7 +27,7 @@ int			ft_count(int n)
 	return (d);
 }
 
-char		*ft_cases(int n)
+static char	*ft_cases(int n)
 {
 	char	*nb;
 

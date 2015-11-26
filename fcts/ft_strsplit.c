@@ -6,13 +6,13 @@
 /*   By: hdecaux <hdecaux@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/10/28 11:27:26 by hdecaux           #+#    #+#             */
-/*   Updated: 2015/10/30 12:13:18 by hdecaux          ###   ########.fr       */
+/*   Updated: 2015/11/26 13:14:03 by hdecaux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int				ft_tabcpy(char *tab, char const *s, size_t i, char c)
+static int		ft_tabcpy(char *tab, char const *s, size_t i, char c)
 {
 	int			k;
 
