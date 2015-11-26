@@ -6,7 +6,7 @@
 /*   By: hdecaux <hdecaux@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/10/16 13:27:05 by hdecaux           #+#    #+#             */
-/*   Updated: 2015/10/28 11:40:59 by hdecaux          ###   ########.fr       */
+/*   Updated: 2015/11/26 14:21:43 by hdecaux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,5 +37,6 @@ char		*ft_strsub(char const *s, unsigned int start, size_t len)
 			}
 		}
 	}
+	t[j] = '\0';
 	return ((char*)t);
 }
