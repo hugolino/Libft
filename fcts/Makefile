@@ -25,13 +25,11 @@ ft_strstr.o ft_putendl.o ft_strsub.o ft_putendl_fd.o ft_strtrim.o ft_putnbr.o \
 ft_tolower.o ft_putnbr_fd.o ft_toupper.o ft_putstr.o ft_count_char.o ft_count_lines.o \
 ft_isupper.o ft_strlowcase.o ft_strupcase.o ft_islower.o ft_isspace.o ft_puttabchar.o
 
-all:	$(NAME)
-
-cmpo:
+$(NAME): 
 	@gcc -Wall -Wextra -Werror -c $(SRC)
-
-$(NAME) : cmpo
 	@ar rc $(NAME) $(SRCO)
+
+all:	$(NAME)
 
 clean:
 	@rm -f $(SRCO)
@@ -40,3 +38,5 @@ fclean: clean
 	@rm -f $(NAME)
 
 re: fclean all
+
+.PHONY: fclean clean
