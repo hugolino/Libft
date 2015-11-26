@@ -6,7 +6,7 @@
 /*   By: hdecaux <hdecaux@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/10/12 13:31:17 by hdecaux           #+#    #+#             */
-/*   Updated: 2015/10/12 13:33:25 by hdecaux          ###   ########.fr       */
+/*   Updated: 2015/11/26 13:11:21 by hdecaux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int		ft_strequ(char const *s1, char const *s2)
 {
-	if (strcmp(s1, s2) == 0)
+	if (ft_strcmp(s1, s2) == 0)
 		return (1);
 	else
 		return (0);
