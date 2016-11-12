@@ -16,20 +16,21 @@ size_t			ft_lines(char const *str, char c)
 {
 	size_t		b;
 	size_t		m;
+	size_t		i;
 
 	b = 0;
-	m = 1;
+	m = 0;
+	i = 0;
 	while (str[b])
 	{
-		if (str[b] != c)
-			b++;
-		if (str[b] == c && str[b + 1] != c)
+		if (str[b] != c && i == 0)
 		{
-			b++;
+			i++;
 			m++;
 		}
-		else if (str[b] == c && str[b + 1] == c)
-			b++;
+		if (str[b] == c)
+			i = 0;
+		b++;
 	}
 	return (m);
 }
